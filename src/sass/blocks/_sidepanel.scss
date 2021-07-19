@@ -1,0 +1,33 @@
+.sidepanel{
+    position: fixed;
+    height: 340px;
+    top: 50%;
+    left: 2.2%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        :hover{
+            transition: all 0.5s;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__devider{
+        width: 0px;
+        height: 70px;
+        border: 1px solid #000000;
+        //margin-top: 15px;
+    }
+    &__text{
+        transition: none;
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+        //margin-top: 15px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
