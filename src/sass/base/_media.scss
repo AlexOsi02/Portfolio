@@ -1,0 +1,130 @@
+@media(max-width: 1439px){
+    .sidepanel{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        width: 960px;
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 400px 490px;
+            column-gap: 60px;
+        }
+        &__skills{
+            column-gap: 20px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 720px;
+    }
+    .about{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+            row-gap: 20px;
+        }
+        &__skills{
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(50px, auto);
+            column-gap: 20px;
+        }
+        &__subtitle{
+            font-size: 32px;
+            line-height: 52px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 540px;
+    }
+    .title{
+        &_fz48{
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+    .promo{
+        &__title{
+            width: 360px;
+        }
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px auto;
+            row-gap: 46px;
+        }
+        &__photo{
+            grid-row: unset;
+        }
+        &__subtitle{
+            font-size: 28px;
+        }
+        &__skills{
+            margin-top: -26px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (max-width: 576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title{
+        &_fz48{
+            font-size: 25px;
+            line-height: 39px;
+        }
+    }
+    .promo{
+        background: url('../img/main_bg.png') 58%/cover no-repeat;
+        &__title{
+            width: 250px;
+            margin-top: 5px;
+        }
+        &__btns{
+            margin-top: 32px;
+        }
+    }
+    .menu{
+        &__block{
+            width: 250px;
+        }
+        &__list{
+            padding-left: 20px;
+        }
+        &__icons{
+            bottom: 50px;
+        }
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .about{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template-rows: 340px auto;
+            row-gap: 46px;
+        }
+        &__photo{
+            grid-row: unset;
+        }
+        &__subtitle{
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .devider{
+            margin-top: 15px;
+        }
+        &__skills{
+            grid-template-columns: 260px;
+        }
+    }
+}
