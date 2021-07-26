@@ -51,22 +51,12 @@
       
     }
     &__item{
+        margin-bottom: 45px;
         &-head{
             display: flex;
-            position: relative;
             div>img{
                 padding:0 18px;
                 padding-top: 14px;
-            }
-            &::before{
-                content: '';
-                position: absolute;
-                width: 42px;
-                height: 1px;
-                background: #000;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -42px;
             }
         }
         &-icon{
@@ -75,6 +65,16 @@
             &:before{
                 top: 0;
                 left: 0;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 42px;
+                height: 1px;
+                background: #000;
+                top: 18px;
+                transform: translateY(-50%);
+                left: -42px;
             }
         }
         &-descr{

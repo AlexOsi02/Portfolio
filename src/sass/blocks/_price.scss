@@ -28,7 +28,7 @@
         padding-left: 25px;
         display: grid;
         grid-template-columns:  repeat(2, auto);
-        grid-template-rows: 21px minmax(18px, auto);
+        grid-template-rows: minmax(21px, auto) minmax(18px, auto);
         grid-auto-rows: 18px;
         row-gap: 5px;
         @include before_circle;
